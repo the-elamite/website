@@ -3,12 +3,12 @@
 <body>
 
 <?php
-$ver = SQLite3::version();
+$db = new SQLite3('threads.sqlite', SQLITE3_OPEN_CREATE | SQLITE3_OPEN_READWRITE);
+$db->exec('CREATE TABLE foo (bar TEXT)');
+$db->exec("INSERT INTO foo (bar) VALUES ('This is a test')");
 
-echo $ver['versionString'] . "\n";
-echo $ver['versionNumber'] . "\n";
-
-var_dump($ver);
+$result = $db->query('SELECT bar FROM foo');
+var_dump($result->fetchArray());
 ?>
 
 <form action="new_post.php" method="POST">
