@@ -12,11 +12,6 @@ $stmt->bindValue(':title', $_POST['title']);
 $stmt->bindValue(':message', $_POST['message']);
 $stmt->execute();
 
-echo $db->lastErrorMsg();
-
-$res2 = $db->exec("INSERT INTO threads VALUES(null, 123, 'lol', 'xd', 'lmao')");
-echo $res2;
-
 $res = $db->query("SELECT * FROM threads");
 while ($row = $res->fetchArray(SQLITE3_ASSOC)) {
     echo $row['author'] . ', ' . $row['title'] . ': ' . $row['message'] . '<br/>';
