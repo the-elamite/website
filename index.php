@@ -3,8 +3,12 @@
 <body>
 
 <?php
-phpinfo();
+$ver = SQLite3::version();
 
+echo $ver['versionString'] . "\n";
+echo $ver['versionNumber'] . "\n";
+
+var_dump($ver);
 ?>
 
 <form action="new_post.php" method="POST">
