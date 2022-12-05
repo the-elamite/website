@@ -13,7 +13,7 @@ $stmt->bindValue(':message', $_POST['message']);
 $stmt->execute();
 
 $res = $db->query("SELECT * FROM threads");
-while ($row = $result->fetchArray(SQLITE3_ASSOC)) {
+while ($row = $res->fetchArray(SQLITE3_ASSOC)) {
     echo $row['author'] . ', ' . $row['title'] . ': ' . $row['message'] . '<br/>';
 }
 ?>
