@@ -12,10 +12,7 @@ $stmt->bindValue(':title', strip_tags($_POST['title']));
 $stmt->bindValue(':message', strip_tags($_POST['message']));
 $stmt->execute();
 
-$res = $db->query("SELECT * FROM threads");
-while ($row = $res->fetchArray(SQLITE3_ASSOC)) {
-    echo $row['author'] . ', ' . $row['title'] . ': ' . $row['message'] . '<br/>';
-}
+header("Location: index.php");
 ?>
 
 </body>
