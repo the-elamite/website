@@ -5,7 +5,9 @@
 <?php
 $db = new SQLite3('threads.db');
 $result = $db->query("SELECT * FROM items");
-echo $result;
+while ($row = $result->fetchArray(SQLITE3_ASSOC)) {
+    echo $row['name'] . ': $' . $row['price'] . '<br/>';
+}
 ?>
 
 <form action="new_post.php" method="POST">
