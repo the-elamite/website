@@ -4,8 +4,8 @@
 
 <?php
 $db = new SQLite3('threads.db');
-$stmt = $db->prepare('INSERT INTO threads(time, author, title, message)'
-    . 'VALUES(:time, :author, :title, :message)');
+$stmt = $db->prepare("INSERT INTO threads(time, author, title, message)"
+    . "VALUES(:time, ':author', ':title', ':message')");
 $stmt->bindValue(':time', time(), SQLITE3_INTEGER);
 $stmt->bindValue(':author', $_POST['author']);
 $stmt->bindValue(':title', $_POST['title']);
