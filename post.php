@@ -4,9 +4,14 @@
 
 <?php
 $db = new SQLite3('threads.db');
-$query = 'INSERT INTO threads(id, time, author, title, message) VALUES (null, 123, "' . $_POST['author'] . '", "' . $_POST['title'] . '", "' . $_POST['message'] . '")';
-echo $query;
-$db->query($query);
+$statement = $db->prepare('INSERT INTO threads(id, time, author, title, message) VALUES (null, :time, :author, :title, :message)');
+$statement->bindValue(':time', time());
+$statement->bindValue(':author', $_POST['author']);
+$statement->bindValue(':title', $_POST['title']);
+$statement->bindValue(':message', $_POST['message']);
+
+echo $statement->getSQL();
+//$statement->execute();
 ?>
 
 </body>
