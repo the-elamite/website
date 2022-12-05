@@ -1,3 +1,14 @@
 body {
     text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: skyblue;
+}
+
+.panel {
+    background-color: white;
+    border: 1px solid black;
+    width: 600px;
+    margin: auto;
+    margin-block: 10px;
+    padding-block: 10px;
 }
