@@ -3,8 +3,8 @@
 <body>
 
 <?php
-$db = new SQLite3('threads.db');
-
+//$db = new SQLite3('threads.db');
+echo "Hi!";
 ?>
 
 <form action="new_post.php" method="POST">
