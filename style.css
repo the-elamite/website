@@ -1,11 +1,6 @@
 body {
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: skyblue;
-}
-
-footer {
-    font-weight: 600;
 }
 
 .title h1 {
