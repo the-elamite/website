@@ -3,7 +3,8 @@
 <body>
 
 <?php
-$db = new SQLite3('threads.sqlite', SQLITE3_OPEN_CREATE | SQLITE3_OPEN_READWRITE);
+$db = new SQLite3('threads.db');
+
 $db->exec('CREATE TABLE foo (bar TEXT)');
 $db->exec("INSERT INTO foo (bar) VALUES ('This is a test')");
 
