@@ -11,7 +11,7 @@ $statement->bindValue(':title', $_POST['title']);
 $statement->bindValue(':message', $_POST['message']);
 
 echo $statement->getSQL(true);
-//$statement->execute();
+$statement->execute();
 ?>
 
 </body>
