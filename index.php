@@ -4,12 +4,8 @@
 
 <?php
 $db = new SQLite3('threads.db');
-$sql = "SELECT * FROM items WHERE price < 3.00";
-$result = $db->query($sql);
-while ($row = $result->fetchArray(SQLITE3_ASSOC)) {
-    echo $row['name'] . ': $' . $row['price'] . '<br/>';
-}
-unset($db);
+$result = $db->query("SELECT * FROM items");
+echo $result;
 ?>
 
 <form action="new_post.php" method="POST">
