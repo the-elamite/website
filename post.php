@@ -11,7 +11,7 @@ $statement->bindValue(':title', $_POST['title']);
 $statement->bindValue(':message', $_POST['message']);
 $statement->execute();
 
-$res = $db->query("SELECT * FROM foo");
+$res = $db->query("SELECT * FROM threads");
 while (($row = $res->fetchArray(SQLITE3_ASSOC))) {
     var_dump($row);
 }
