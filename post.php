@@ -5,14 +5,15 @@
 <?php
 $db = new SQLite3('threads.db');
 $stmt = $db->prepare("INSERT INTO threads(time, author, title, message)"
-    . "VALUES(:time, ':author', ':title', ':message')");
+    . "VALUES(:time, :author, :title, :message)");
 $stmt->bindValue(':time', time(), SQLITE3_INTEGER);
 $stmt->bindValue(':author', $_POST['author']);
 $stmt->bindValue(':title', $_POST['title']);
 $stmt->bindValue(':message', $_POST['message']);
 $stmt->execute();
 
-$db->exec("INSERT INTO threads VALUES(null, 123, 'lol', 'xd', 'lmao')");
+$res2 = $db->exec("INSERT INTO threads VALUES(null, 123, 'lol', 'xd', 'lmao')");
+echo $res2;
 
 $res = $db->query("SELECT * FROM threads");
 while ($row = $res->fetchArray(SQLITE3_ASSOC)) {
