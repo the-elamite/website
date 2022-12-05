@@ -11,7 +11,7 @@ echo $row['title'] . ': ' . $row['message'] . '<br/>';
 }*/
 ?>
 
-<form action="new_post.php" method="POST">
+<form action="post.php" method="post">
     <input type="text" name="author"><br>
     <input type="text" name="title"><br>
     <textarea cols="60" rows="5" name="message"></textarea><br>
