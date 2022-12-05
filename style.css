@@ -4,6 +4,14 @@ body {
     background-color: skyblue;
 }
 
+footer {
+    font-weight: 600;
+}
+
+.title h1 {
+    max-height: 32px;
+}
+
 .panel {
     background-color: white;
     border: 1px solid black;
