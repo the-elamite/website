@@ -9,9 +9,12 @@ $statement->bindValue(':time', time(), SQLITE3_INTEGER);
 $statement->bindValue(':author', $_POST['author']);
 $statement->bindValue(':title', $_POST['title']);
 $statement->bindValue(':message', $_POST['message']);
-
-echo $statement->getSQL(true);
 $statement->execute();
+
+$res = $db->query("SELECT * FROM foo");
+while (($row = $res->fetchArray(SQLITE3_ASSOC))) {
+    var_dump($row);
+}
 ?>
 
 </body>
