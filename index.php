@@ -18,7 +18,7 @@
             $res = $db->query('SELECT * FROM threads');
 
             while ($row = $res->fetchArray(SQLITE3_ASSOC)) {
-                echo '<li><a href="thread.php?id=' . $row['id'] . '">' . $row['title'] . '</a></li>';
+                echo '<li><a href="threads.php?id=' . $row['id'] . '">' . $row['title'] . '</a></li>';
             }
             ?>
 			<li><a href="12-4-22.html">a post</a></li>
