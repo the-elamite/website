@@ -13,14 +13,7 @@
 	<div class="menu">
 		<p><a href="index.php">home</a></p>
 		<ul class="posts">
-            <?php
-            $db = new SQLite3('threads.db');
-            $res = $db->query('SELECT * FROM threads');
 
-            while ($row = $res->fetchArray(SQLITE3_ASSOC)) {
-                echo '<li><a href="threads.php?id=' . $row['id'] . '">' . $row['title'] . '</a></li>';
-            }
-            ?>
 		</ul>
 	</div>
 

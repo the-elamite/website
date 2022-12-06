@@ -11,16 +11,18 @@
 	</div>
 
 	<div class="main">
-        <?php
-        $db = new SQLite3('threads.db');
-        $stmt = $db->prepare("SELECT time, author, title, message FROM threads WHERE id=:id");
-        $stmt->bindValue(":id", $_GET["id"]);
-        $res = $stmt->execute();
+        <div class="text">
+            <?php
+            $db = new SQLite3('threads.db');
+            $stmt = $db->prepare("SELECT time, author, title, message FROM threads WHERE id=:id");
+            $stmt->bindValue(":id", $_GET["id"]);
+            $res = $stmt->execute();
 
-        while ($row = $res->fetchArray(SQLITE3_ASSOC)) {
-            echo $row['message'];
-        }
-        ?>
+            while ($row = $res->fetchArray(SQLITE3_ASSOC)) {
+                echo '<h2>' . $row['title'] . '</h2><p>' . $row['message' . '</p>'];
+            }
+            ?>
+        </div>
 	</div>
 
 	<div class="footer">
