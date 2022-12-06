@@ -33,6 +33,7 @@ body {
     padding-block: 8px;
     height: 20px;
     width: 100%;
+    min-width: 600px;
 }
 
 .main {
@@ -42,6 +43,7 @@ body {
     align-self: center;
     min-height: 400px;
     width: 100%;
+    min-width: 600px;
 
     overflow-wrap: break-word;
     word-wrap: break-word;
