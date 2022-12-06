@@ -19,7 +19,7 @@
             $res = $stmt->execute();
 
             while ($row = $res->fetchArray(SQLITE3_ASSOC)) {
-                echo '<h2>' . $row['title'] . '</h2><p>' . $row['message' . '</p>'];
+                echo '<h2>' . $row['title'] . '</h2><p>' . $row['message'] . '</p>';
             }
             ?>
         </div>
