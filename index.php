@@ -21,7 +21,6 @@
                 echo '<li><a href="threads.php?id=' . $row['id'] . '">' . $row['title'] . '</a></li>';
             }
             ?>
-			<li><a href="12-4-22.html">a post</a></li>
 		</ul>
 	</div>
 
