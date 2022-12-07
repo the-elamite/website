@@ -57,24 +57,33 @@ body {
     word-wrap: break-word;
 }
 
-.group {
-    margin: 10px;
-    width: 95%;
-    height: 54px;
-    background-color: grey;
+.padding {
+    padding: 10px;
+}
+
+.table {
+    width: 100%;
+    border-spacing: 0px 5px;
+    border-collapse: collapse;
+}
+
+#center {
+    text-align: center;
+}
+
+td {
     border: 1px solid black;
+}
+
+.row {
+    height: 52px;
+    background-color: grey;
     text-align: left;
-    padding-left: 10px;
 }
 
-.group h4,
-p,
-h5 {
+.row p,
+h4 {
     margin: 8px;
-}
-
-.group h5 {
-    position: absolute;
 }
 
 a {
@@ -86,30 +95,6 @@ a {
 a:active,
 a:hover {
     color: #E23E3E;
-}
-
-.forum1 {
-    background-color: khaki;
-}
-
-.forum2 {
-    background-color: blanchedalmond;
-}
-
-.forum3 {
-    background-color: lightgreen;
-}
-
-.forum4 {
-    background-color: tomato;
-}
-
-.forum5 {
-    background-color: lightsteelblue;
-}
-
-.forum6 {
-    background-color: lightslategray;
 }
 
 .menu {
@@ -125,4 +110,12 @@ a:hover {
     list-style: none;
     padding: 2px;
     margin: 8px;
+}
+
+#group1 {
+    background-color: burlywood;
+}
+
+#group2 {
+    background-color: rgb(180, 145, 236);
 }

@@ -16,6 +16,7 @@
 	</div>
 
 	<div class="main">
+		<!--
         <form action="post.php" method="post">
             <h2>create a thread</h2>
             <input type="text" name="author" value="Anonymous">
@@ -23,6 +24,7 @@
             <textarea cols="50" rows="8" placeholder="Lorem ipsum dolor sit amet..." name="message" minlength="32" required></textarea><br>
             <input type="submit" value="Post Thread">
         </form>
+		!-->
 	</div>
 
 	<div class="footer">
