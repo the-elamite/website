@@ -10,18 +10,9 @@
 		<p>the only correct opinion is my own.</p>
 	</div>
 
-	<div class="menu">
-		<p><a href="index.php">home</a></p>
-		<ul class="posts">
-            <?php
-            $db = new SQLite3('threads.db');
-            $res = $db->query('SELECT * FROM threads');
-
-            while ($row = $res->fetchArray(SQLITE3_ASSOC)) {
-                echo '<li><a href="threads.php?id=' . $row['id'] . '">' . $row['title'] . '</a></li>';
-            }
-            ?>
-		</ul>
+	<div class="bar">
+		<a href="index.php">home</a>
+		<a href="forum.php">forum</a>
 	</div>
 
 	<div class="main">
@@ -35,7 +26,7 @@
 	</div>
 
 	<div class="footer">
-		Copyright &copy; 2005-2022, John Swagington.
+		<p>Copyright &copy; 2005-2022, John Swagington.</p>
 	</div>
 </body>
 </html>
