@@ -12,7 +12,11 @@
 	<div class="main">
 		<h1>posts</h1>
 		<ul>
-			<li><time>Jan 26 2023</time> - <a href="/posts/post1.html">Test Post</a></li>
+			<li><time>Jan 26 2023</time> - <a href="/posts/post1.html">test post</a></li>
+		</ul>
+		<h1>games</h1>
+		<ul>
+			<li><a href="/games/dungeon-delver.html">dungeon delver</a></li>
 		</ul>
 	</div>
 </body>
