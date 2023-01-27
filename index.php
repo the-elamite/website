@@ -12,7 +12,7 @@
 	<div class="posts">
 		<h1>posts</h1>
 		<ul>
-			<li><time>Jan 26 2023</time> - <a href="/posts/post1">Test Post</a></li>
+			<li><time>Jan 26 2023</time> - <a href="/posts/post1.html">Test Post</a></li>
 		</ul>
 	</div>
 </body>
