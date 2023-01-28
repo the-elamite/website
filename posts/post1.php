@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Welcome to swagtopia!</title>
+    <title>Swagtopia</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <div class="title">
-		<a href="../index.php"><h1>swagtopia</h1></a>
-        <p>we stand in solidarity with the bajookanese refugees.</p>
+        <a href="../index.php"><h1>swagtopia</h1></a>
+        <p><?php include("motto.php") ?></p>
     </div>
     <div class="main">
         <h1>Title</h1>
