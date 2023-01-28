@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Swagtopia</title>
 	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
@@ -13,7 +13,7 @@
 	<div class="main">
 		<h1>posts</h1>
 		<ul>
-			 <li><time>Jan 26 2023</time> - <a href="/posts/post1.php">test post</a></li>
+			 <li>Jan 26 2023 - <a href="/posts/post1.php">test post</a></li>
 		</ul>
 		<h1>games</h1>
 		<ul>
