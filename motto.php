@@ -7,5 +7,5 @@ $mottos = [
     "I'm Joe Biden, and I approve this message."
 ];
 
-echo $mottos[rand(0, sizeof($mottos) - 1)];
+//echo $mottos[rand(0, sizeof($mottos) - 1)];
 ?>

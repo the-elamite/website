@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 	<title>Swagtopia</title>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1514723555021446"
+	 crossorigin="anonymous"></script>
 	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 	<link rel="stylesheet" href="style.css">
 </head>
